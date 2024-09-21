@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artify - Gallery</title>
+    
+    
+    
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script type="module" crossorigin src="/assets/gallery.81d76603.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/navigator.35bbc02f.js">
+    <link rel="modulepreload" crossorigin href="/assets/constants.8d4d1c4d.js">
+    <link rel="stylesheet" href="/assets/navigator.ba6b2cbe.css">
+    <link rel="stylesheet" href="/assets/gallery.e5717ff2.css">
+    <link rel="stylesheet" href="/assets/categories.4bced9e9.css">
+  </head>
+  <body>
+    <header>
+      <h1>Artify Gallery</h1>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html"><i class="fas fa-home"></i></a>
+          </li>
+          <li>
+            <a href="categories.html" class="highlight-btn">Categories</a>
+          </li>
+          <li><a href="favorites.html" class="highlight-btn">Favorites</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="gallery">
+        <h2 id="gallery-title">Gallery</h2>
+        <div class="artwork-grid" id="gallery-artworks"></div>
+      </section>
+    </main>
+
+    <div id="artwork-popup" class="popup">
+      <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <img id="popup-image" src="" alt="Artwork" />
+        <h3 id="popup-title"></h3>
+        <p id="popup-artist"></p>
+        <button id="favorite-btn" class="favorite-btn">Add to Favorites</button>
+      </div>
+    </div>
+
+    
+  </body>
+</html>

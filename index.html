@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artify - Virtual Art Gallery</title>
+
+    <script type="module" crossorigin src="/assets/main.c56c8133.js"></script>
+    <link
+      rel="modulepreload"
+      crossorigin
+      href="/assets/navigator.35bbc02f.js"
+    />
+    <link
+      rel="modulepreload"
+      crossorigin
+      href="/assets/constants.8d4d1c4d.js"
+    />
+    <link rel="stylesheet" href="/assets/navigator.ba6b2cbe.css" />
+  </head>
+  <body>
+    <header>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+        rel="stylesheet"
+      />
+      <h1
+        style="
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          letter-spacing: 2px;
+        "
+      >
+        Artify
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="gallery.html?category=modern">Modern Art</a></li>
+          <li><a href="gallery.html?category=classics">Classics</a></li>
+          <li><a href="gallery.html?category=sculptures">Sculptures</a></li>
+          <li>
+            <a href="categories.html" class="highlight-btn">Categories</a>
+          </li>
+          <li>
+            <a href="favorites.html" class="highlight-btn">My Favorites</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="trending">
+        <h2>Trending Artworks</h2>
+        <div class="artwork-grid" id="trending-artworks"></div>
+      </section>
+
+      <section id="related-favorites">
+        <h2>Related to Your Favorites</h2>
+        <div class="artwork-grid" id="related-artworks"></div>
+      </section>
+
+      <section id="random">
+        <h2>Discover Random Art</h2>
+        <div class="artwork-grid" id="random-artworks"></div>
+      </section>
+    </main>
+
+    <div id="artwork-popup" class="popup">
+      <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <img id="popup-image" src="" alt="Artwork" />
+        <h3 id="popup-title"></h3>
+        <p id="popup-artist"></p>
+        <button id="favorite-btn">Add to Favorites</button>
+      </div>
+    </div>
+  </body>
+</html>
